@@ -24,8 +24,10 @@ apt install -y \
     xfconf \
     xfdesktop4 \
     xfwm4 \
-    adwaita-qt \
     qt5ct 
+    
+# additional theming, in case you don't want it, just comment it
+git clone https://github.com/erned98/xfce4-dots && cd xfce4-dots && chmod +x setup && ./setup
 
 echo 
 echo xfce install complete, please reboot and issue 'startx'
